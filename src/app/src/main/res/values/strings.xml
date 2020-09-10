@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ams AS39513 Demo</string>
+    <string name="n_a">N/A</string>
+    <string name="uid">UID:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="external_sensor">External Sensor:</string>
+    <string name="battery_voltage">Battery Voltage:</string>
+    <string name="logging_form">Logging Form:</string>
+    <string name="storage_rule">Storage Rule:</string>
+    <string name="interval">Interval:</string>
+    <string name="sensor">Sensor:</string>
+    <string name="battery_check">Battery Check:</string>
+    <string name="extreme_lower_limit">Exterme Lower Limt:</string>
+    <string name="lower_limit">Lower Limit:</string>
+    <string name="upper_limit">Upper Limit:</string>
+    <string name="extreme_upper_limit">Extreme Upper Limit:</string>
+    <string name="measurement_status">Measurement Status:</string>
+    <string name="num_measurements">Number of Measurements:</string>
+</resources>

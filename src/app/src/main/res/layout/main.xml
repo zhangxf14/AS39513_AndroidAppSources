@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:alpha="0.05"
+        android:contentDescription="@drawable/ams_icon_rgb_png_trans"
+        android:src="@drawable/ams_icon_rgb_png_trans" />
+    
+    <ScrollView
+        android:id="@+id/textAreaScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/uid"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_uid_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_uid"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_uid"
+                android:layout_alignParentLeft="true"
+                android:text="@string/temperature"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_temperature_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_temperature"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+            <TextView
+                android:id="@+id/textView_batteryVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_temperature"
+                android:layout_alignParentLeft="true"
+                android:text="@string/battery_voltage"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_batteryVoltage_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_batteryVoltage"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+            <TextView
+                android:id="@+id/textView_loggingForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_batteryVoltage"
+                android:layout_alignParentLeft="true"
+                android:text="@string/logging_form"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_loggingForm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_loggingForm"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_storageRule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_loggingForm"
+                android:layout_alignParentLeft="true"
+                android:text="@string/storage_rule"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_storageRule_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_storageRule"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_storageRule"
+                android:layout_alignParentLeft="true"
+                android:text="@string/interval"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_interval_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_interval"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_interval"
+                android:layout_alignParentLeft="true"
+                android:text="@string/sensor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_sensor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_sensor"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_batteryCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_sensor"
+                android:layout_alignParentLeft="true"
+                android:text="@string/battery_check"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_batteryCheck_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_batteryCheck"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_txhilim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_batteryCheck"
+                android:layout_alignParentLeft="true"
+                android:text="@string/extreme_upper_limit"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_txhilim_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_txhilim"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_thilim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_txhilim"
+                android:layout_alignParentLeft="true"
+                android:text="@string/upper_limit"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_thilim_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_thilim"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_tlolim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_thilim"
+                android:layout_alignParentLeft="true"
+                android:text="@string/lower_limit"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_tlolim_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_tlolim"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+            <TextView
+                android:id="@+id/textView_txlolim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_tlolim"
+                android:layout_alignParentLeft="true"
+                android:text="@string/extreme_lower_limit"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_txlolim_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_txlolim"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_measStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_txlolim"
+                android:layout_alignParentLeft="true"
+                android:text="@string/measurement_status"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_measStatus_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_measStatus"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_measCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_measStatus"
+                android:layout_alignParentLeft="true"
+                android:text="@string/num_measurements"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView_measCnt_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_measCnt"
+                android:layout_alignParentRight="true"
+                android:text="@string/n_a"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/graph_temp"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/textView_measCnt"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/graph_temp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
